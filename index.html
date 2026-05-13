@@ -6,71 +6,104 @@
     <title>Hauling & Material Solutions | Statesville, NC</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .bg-subtle { background-color: #f8fafc; }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto:wght@300;400&display=swap');
+        
+        :root {
+            --brand-navy: #1e456d;
+            --brand-orange: #c85a1a;
+        }
+
+        body { font-family: 'Roboto', sans-serif; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+        
+        .border-brand { border-color: var(--brand-navy); }
+        .text-brand-navy { color: var(--brand-navy); }
+        .text-brand-orange { color: var(--brand-orange); }
+        .bg-brand-navy { background-color: var(--brand-navy); }
     </style>
 </head>
-<body class="bg-subtle text-slate-800">
+<body class="bg-slate-50 text-slate-800 leading-relaxed">
 
-    <!-- Main Container -->
-    <div class="min-h-screen flex flex-col items-center justify-center px-6 py-12">
+    <!-- Main Section -->
+    <div class="min-h-screen flex flex-col items-center justify-center px-4 py-16">
         
-        <!-- Centered Circular Logo -->
-        <div class="mb-8">
-            <img src="logo.png" alt="Hauling & Material Solutions Logo" class="w-48 h-48 md:w-64 md:h-64 object-contain mx-auto rounded-full shadow-xl">
+        <!-- Hero Logo -->
+        <div class="mb-10 animate-fade-in">
+            <img src="1000003924.png" alt="Hauling & Material Solutions" class="w-64 h-64 md:w-80 md:h-80 object-contain drop-shadow-2xl">
         </div>
 
-        <!-- Business Identity -->
-        <h1 class="text-3xl md:text-5xl font-bold text-center tracking-tight mb-4">
-            Hauling & Material Solutions
-        </h1>
-        <p class="text-lg md:text-xl text-slate-500 font-light text-center mb-12 uppercase tracking-widest">
-            Statesville, North Carolina
-        </p>
-
-        <!-- The Community Pledge -->
-        <div class="max-w-2xl w-full bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100">
-            <h2 class="text-2xl font-bold mb-6 text-center text-slate-900 underline decoration-orange-500 underline-offset-8">
-                Our Pledge to the Community
-            </h2>
-            <p class="text-lg leading-relaxed text-slate-700 mb-6 italic">
-                "We believe that service to the community goes beyond just clearing space. Our mission is to handle every item with a commitment to environmental responsibility and social impact."
-            </p>
-            <ul class="space-y-4 text-slate-600">
-                <li class="flex items-start">
-                    <span class="text-orange-500 mr-2">●</span>
-                    <strong>Recycle First:</strong> We prioritize diverting materials from the landfill by utilizing specialized recycling channels for all recoverable goods.
-                </li>
-                <li class="flex items-start">
-                    <span class="text-orange-500 mr-2">●</span>
-                    <strong>Donate Always:</strong> Items that still hold value are donated to local organizations in Iredell County to support families in need.
-                </li>
-                <li class="flex items-start">
-                    <span class="text-orange-500 mr-2">●</span>
-                    <strong>Responsible Disposal:</strong> When items cannot be repurposed, we ensure they are handled strictly according to local environmental standards.
-                </li>
-            </ul>
+        <!-- Business Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-brand-navy tracking-tight uppercase">
+                Hauling & Material Solutions
+            </h1>
+            <div class="flex items-center justify-center mt-2 space-x-4">
+                <span class="h-px w-12 bg-brand-orange"></span>
+                <p class="text-brand-orange font-bold tracking-[0.2em] uppercase">Statesville, NC</p>
+                <span class="h-px w-12 bg-brand-orange"></span>
+            </div>
         </div>
 
-        <!-- Contact Section -->
-        <div class="mt-12 text-center">
-            <p class="text-slate-500 mb-4 font-medium uppercase tracking-tighter">Ready to clear your space responsibly?</p>
-            <a href="tel:7048325611" class="text-3xl md:text-5xl font-bold text-blue-900 hover:text-orange-600 transition-colors">
+        <!-- The Pledge Card -->
+        <div class="max-w-3xl w-full bg-white rounded-xl shadow-2xl overflow-hidden border-t-8 border-brand">
+            <div class="p-8 md:p-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-brand-navy mb-8 text-center border-b pb-4">
+                    Our Pledge to the Community
+                </h2>
+                
+                <p class="text-xl md:text-2xl text-slate-600 italic text-center mb-10 leading-relaxed font-light">
+                    "Providing Iredell County with professional service rooted in responsibility, sustainability, and community support."
+                </p>
+
+                <div class="space-y-8">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-brand-orange p-2 rounded-lg mt-1">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-brand-navy uppercase tracking-wide">Recycle & Divert</h3>
+                            <p class="text-slate-600 mt-1">Every load is sorted to ensure that recyclable materials are diverted from the landfill and processed correctly.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-brand-orange p-2 rounded-lg mt-1">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-brand-navy uppercase tracking-wide">Local Donations</h3>
+                            <p class="text-slate-600 mt-1">Items in good condition are donated to local non-profits to support our neighbors here in Statesville.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-brand-orange p-2 rounded-lg mt-1">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-brand-navy uppercase tracking-wide">Ethical Disposal</h3>
+                            <p class="text-slate-600 mt-1">We adhere to the highest environmental standards for materials that cannot be repurposed or recycled.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- High-Impact Call to Action -->
+        <div class="mt-16 text-center">
+            <p class="text-slate-500 font-bold uppercase tracking-widest mb-4">Request a Pickup</p>
+            <a href="tel:7048325611" class="text-4xl md:text-6xl font-black text-brand-navy hover:text-brand-orange transition duration-300">
                 704.832.5611
             </a>
-            <div class="mt-6">
-                <span class="px-4 py-1 rounded-full border border-slate-300 text-slate-500 text-sm">
-                    Licensed & Registered in Iredell County
-                </span>
-            </div>
         </div>
 
     </div>
 
-    <!-- Simple Footer -->
-    <footer class="py-8 border-t border-slate-200 text-center text-slate-400 text-xs">
-        © 2026 Hauling & Material Solutions. All Rights Reserved.
+    <!-- Final Branding Footer -->
+    <footer class="bg-brand-navy text-slate-300 py-10 px-4 text-center mt-12">
+        <p class="font-bold text-white mb-2 tracking-widest uppercase">Hauling & Material Solutions</p>
+        <p class="text-sm opacity-75">Iredell County Business Registration: Hauling & Material Solutions</p>
+        <p class="text-xs mt-6 opacity-50 italic">Serving Statesville and North Carolina with integrity.</p>
     </footer>
 
 </body>
