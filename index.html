@@ -22,4 +22,98 @@
                 </div>
             </div>
             <div class="flex items-center gap-2">
-                <a href="tel:7048325611" class="bg-orange-50 text-orange-600 font-black px-4 py-2 rounded-lg border border-orange-200 hover
+                <a href="tel:7048325611" class="bg-orange-50 text-orange-600 font-black px-4 py-2 rounded-lg border border-orange-200 hover:bg-orange-100 transition flex items-center gap-2">
+                    📞 Call / Text: 704.832.5611
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-b from-orange-50 to-white py-12 md:py-20 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="inline-flex items-center gap-1.5 bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full mb-4 border border-orange-200">
+                    ⭐️ 5.0 Rated Neighborhood Service
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-black tracking-tight leading-tight">
+                    Junk Removal Made Simple. <br><span class="text-orange-600">We Do All The Heavy Lifting.</span>
+                </h2>
+                <p class="mt-4 text-lg text-gray-600 leading-relaxed">
+                    Same-day pickups, honest upfront pricing, and a friendly local service that hauls it all away—letting you clear out the clutter and reclaim your space completely. Get your free, no-obligation quote instantly.
+                </p>
+                
+                <div class="mt-6 space-y-2.5">
+                    <div class="flex items-center gap-2.5 text-sm font-semibold text-gray-700">
+                        <span class="text-orange-600 text-lg">✓</span> Same-Day & Next-Day Service
+                    </div>
+                    <div class="flex items-center gap-2.5 text-sm font-semibold text-gray-700">
+                        <span class="text-orange-600 text-lg">✓</span> Fully Licensed & Insured
+                    </div>
+                    <div class="flex items-center gap-2.5 text-sm font-semibold text-gray-700">
+                        <span class="text-orange-600 text-lg">✓</span> Our Community Pledge: We Donate & Recycle
+                    </div>
+                </div>
+
+                <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                    <a href="#quote" class="bg-orange-600 text-white font-extrabold text-center px-8 py-4 rounded-xl shadow-md hover:bg-orange-700 transition text-lg tracking-wide border-b-4 border-orange-800">
+                        Get My Free Quote →
+                    </a>
+                </div>
+            </div>
+
+            <div id="quote" class="bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-gray-200">
+                <h3 class="text-xl font-bold text-black mb-2">Get Your Free Quote</h3>
+                <p class="text-sm text-gray-500 mb-6">Tell us what's gotta go — we'll text or call you with a price fast.</p>
+                
+                <form class="space-y-4" onsubmit="event.preventDefault();">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Full Name</label>
+                        <input type="text" placeholder="John Doe" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 transition">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Phone Number</label>
+                            <input type="tel" placeholder="704.832.5611" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">City / ZIP</label>
+                            <input type="text" placeholder="Troutman, 28166" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">What needs to go?</label>
+                        <textarea rows="3" placeholder="e.g., an old couch, yard debris, basement clutter, child play structures..." class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-black text-white font-bold py-4 rounded-lg shadow hover:bg-neutral-800 transition uppercase tracking-wider text-sm cursor-pointer">
+                        Send Quote Request
+                    </button>
+                    <p class="text-center text-xs text-gray-400 mt-2">🔒 Your information is kept completely private and secure.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-black text-black">Honest, Upfront Pricing by Volume</h2>
+                <p class="text-gray-600 mt-2">You only pay for the physical space your items occupy in our trailer setup. Zero hidden surprises.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                <div class="bg-gray-50 p-5 rounded-xl border border-gray-200 flex flex-col justify-between text-center">
+                    <div>
+                        <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Minimum</span>
+                        <div class="text-3xl font-black text-black my-2">$75</div>
+                    </div>
+                    <p class="text-xs text-gray-500">A single heavy item or a few small bags/boxes.</p>
+                </div>
+                <div class="bg-gray-50 p-5 rounded-xl border border-gray-200 flex flex-col justify-between text-center">
+                    <div>
+                        <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">¼ Trailer</span>
+                        <div class="text-3xl font-black text-black my-2">$175</div>
+                    </div>
+                    <p class="text-xs text-gray-500">A small cleanout — a couple of old appliances or minor yard junk.</p>
+                </div>
+                <div class="bg-gray-50 p-5 rounded-xl border border-gray-200 flex flex-col justify-between text-center">
+                    <div>
