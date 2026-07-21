@@ -71,34 +71,42 @@
             <!-- Quote Form Box -->
             <div id="quote" class="bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-gray-200">
                 <h3 class="text-xl font-bold text-black mb-2">Get Your Free Quote</h3>
-                <p class="text-sm text-gray-500 mb-6">Tell us what's gotta go — we'll text or call you with a price fast.</p>
+                <p class="text-sm text-gray-500 mb-6">Tell us what's gotta go — upload pictures for an exact quote fast.</p>
                 
-                <form class="space-y-4" onsubmit="event.preventDefault();">
+                <form action="https://formsubmit.co/haulingandmaterialsolutions@gmail.com" method="POST" enctype="multipart/form-data" class="space-y-4">
+                    <!-- Form Configuration Options -->
+                    <input type="hidden" name="_subject" value="New Quote Request - Hauling & Material Solutions">
+                    <input type="hidden" name="_template" value="table">
+
                     <div>
                         <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Full Name</label>
-                        <input type="text" placeholder="John Doe" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white transition">
+                        <input type="text" name="Name" required placeholder="John Doe" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white transition">
                     </div>
                     <div class="grid grid-cols-2 gap-4">
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Phone Number</label>
-                            <input type="tel" placeholder="704.832.5611" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white transition">
+                            <input type="tel" name="Phone" required placeholder="704.832.5611" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white transition">
                         </div>
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">City / ZIP</label>
-                            <input type="text" placeholder="Troutman, 28166" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white transition">
+                            <input type="text" name="Location" required placeholder="Troutman, 28166" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white transition">
                         </div>
                     </div>
                     <div>
                         <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Service Requested</label>
-                        <select class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white transition text-gray-700">
+                        <select name="Service" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white transition text-gray-700">
                             <option>Standard Junk Removal</option>
                             <option>Material / Part Hauling (Up to 5,000 lbs)</option>
                             <option>Estate / Commercial Cleanout & Asset Assessment</option>
                         </select>
                     </div>
                     <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Upload Photos (Optional)</label>
+                        <input type="file" name="Photos" accept="image/*" multiple class="w-full text-xs text-gray-500 file:mr-4 file:py-2.5 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-orange-50 file:text-orange-600 hover:file:bg-orange-100 cursor-pointer bg-gray-50 border border-gray-200 rounded-lg">
+                    </div>
+                    <div>
                         <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1">Details (What needs to go or move?)</label>
-                        <textarea rows="3" placeholder="e.g., an old couch, industrial parts delivery, estate clearance..." class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white transition"></textarea>
+                        <textarea name="Details" rows="3" placeholder="e.g., an old couch, industrial parts delivery, estate clearance..." class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white transition"></textarea>
                     </div>
                     <button type="submit" class="w-full bg-black text-white font-bold py-4 rounded-lg shadow hover:bg-neutral-800 transition uppercase tracking-wider text-sm cursor-pointer">
                         Send Quote Request
